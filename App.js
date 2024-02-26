@@ -1,10 +1,17 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Button } from 'react-native';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+
+<Image source={require('')} />
+
+      <Text style={{ paddingTop: 20 }} >WELCOME !</Text>
+      <Text style={{ paddingBottom: 10, fontSize: 20 }} >to CRM.io</Text>
+      <Button style={{ width: 90 }} title='login' />
+
+
       <StatusBar style="auto" />
     </View>
   );
@@ -13,8 +20,8 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'red',
-    alignItems: 'blue',
+    backgroundColor: '#f2cc8f',
+    alignItems: 'center',
     justifyContent: 'center',
   },
 });
